@@ -112,7 +112,24 @@ As shown above, three different nodes has been used for running this program, wh
 
 ### Exercise 2.4 of Parallel Computing text book:
 
+For the first part of this exercise, a program was written in which each process prints a message reporting its number and total number of processes. This code is available at `ParallelBook_Exercise4_part1.cpp`. The code was compiled and run with 4 tasks and the results were as follows:
+
+```
+Hello from process 0 out of 4
+Hello from process 2 out of 4
+Hello from process 3 out of 4
+Hello from process 1 out of 4
+```
+
+In the next step, it was asked to modify the code so that each process writes its reports into a unique text file. This code is available at `ParallelBook_Exercise4_part2.cpp`. The code was compiled and run with 4 tasks and then 4 different text files were generated `Exercise4_part2_#.txt`, where `#` was associated with the rank of the unique process. 
+
 ### Exercise 2.5 of Parallel Computing text book:
+
+For this exercise, the code in exercise 2.4 was modified with an `if` statement based on the `rank == 0`, where the code is available at `ParallelBook_Exercise5.cpp`. As the result, only the message is expected to print from the processor with rank #0. This result has been confirm by running the program with 4 tasks, where the results was as follows:
+
+```
+Hello from process 0 out of 4
+```
 
 ## Part 4: Eat Some Pi 
 
