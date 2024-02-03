@@ -5,29 +5,69 @@
 
 As a group, complete the following exercises from [HPSC](../assets/EijkhoutIntroToHPC2020.pdf). 
 
-- Exercise 2.18
+### Exercise 2.18
+Explain the problem with the following code
+```c++
+// serial initialization
+  for (i=0; i<N; i++)
+    a[i] = 0.;
+  #pragma omp parallel for
+  for (i=0; i<N; i++)
+    a[i] = b[i] + c[i];
+```
+<span style="color:red">some text</span>.
+
+### Exercise 2.19
+Let's say there are $t$ threads, and your code looks like 
+```c++
+for (i=0; i<N; i++) {
+               a[i] = // some calculation
+             }
+```
+If you specify a chunksize of $1$, iterations $0, t, 2t, \ldots$ go to the first thread $1, 1 + t, 1 + 2t, \ldots$ to the second, et cetera. Discuss why this is a bad strategy from a performance point of view. Hint: look up the definition of *false sharing*. What would be a good chunksize?
+
+
 
 <span style="color:red">some text</span>.
 
-- Exercise 2.19
+### Exercise 2.21
+There is still a problem left with this code: the boundary conditions from the original, global, version have not been taken into account. Give code that solves that problem. 
+
+The code in question is:
+```c++
+MPI_Comm_rank(MPI_COMM_WORLD,&myTaskID);
+       MPI_Comm_size(MPI_COMM_WORLD,&nTasks);
+       if (myTaskID==0) leftproc = MPI_PROC_NULL;
+         else leftproc = myTaskID-1;
+       if (myTaskID==nTasks-1) rightproc = MPI_PROC_NULL;
+         else rightproc = myTaskID+1;
+       MPI_Sendrecv( &b[LocalProblemSize-1], &bfromleft,  rightproc );
+       MPI_Sendrecv( &b[0],                  &bfromright, leftproc);
+```
+
 
 <span style="color:red">some text</span>.
 
-- Exercise 2.21
+### Exercise 2.22
+Take another look at equation (2.5) and give pseudocode that solves the problem using non-blocking sends and receives. What is the disadvantage of this code over a blocking solution? 
+
+The equation is:
+$$
+\begin{cases}
+y_i \longleftarrow y_i+x_{i-1} & i = 1, \ldots, n-1 \\ 
+y_0 \longleftarrow y_0+x_{n-1} & i = 0
+\end{cases}
+$$
 
 <span style="color:red">some text</span>.
 
-
-- Exercise 2.22
-
-<span style="color:red">some text</span>.
-
-- Exercise 2.23
+### Exercise 2.23
+Analyze the discussion in the last item above. Assume that the bandwidth between the two nodes is only enough to sustain one message at a time. What is the cost savings of the hybrid model over the purely distributed model? Hint: consider width and latency separetly. 
 
 <span style="color:red">some text</span>.
 
-- Exercise 2.27
-
+### Exercise 2.27
+How much can you gain from the overlapping computation and communication? Hint: consider the border cases where computation takes zero time and there is only communication, and the reverse. Now consider the general case. 
 <span style="color:red">some text</span>.
 
 
