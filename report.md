@@ -189,6 +189,11 @@ Pi is the ratio of a circle's circumference to its diameter. As such, the value 
 
 7. Going further. Try running your code on different node types on HPCC with varied core counts. In particular, try to ensure that your runs utilize multiple nodes so that the communication network is used. Do you see a change in the communication cost when the job is run on more than one node?
 
+### Error as a function of darts
+![plot_error](analysis/figures/img01.png)
+
+
+
 ## What to turn-in
 
 To your git project repo, commit your final working code for the above exercises and a concise write-up including responses to the warm-up exercises, performance and accuracy data for your calculations of `pi`, the plots made in Part 4, and detailed responses to the questions posed concerning your results. 
