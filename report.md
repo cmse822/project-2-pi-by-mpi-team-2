@@ -192,6 +192,9 @@ Pi is the ratio of a circle's circumference to its diameter. As such, the value 
 ### Error as a function of darts
 ![plot_error](analysis/figures/img01.png)
 
+### Runtime analysis
+![runtime](analysis/figures/img02.png)
+
 
 
 ## What to turn-in
