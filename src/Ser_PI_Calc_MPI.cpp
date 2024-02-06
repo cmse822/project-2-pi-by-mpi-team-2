@@ -3,6 +3,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <random>
+#include <string>
 #include "mpi.h"
 
 using namespace std;
@@ -54,7 +55,7 @@ int main(int argc, char *argv[]) {
     //  an input from the command line.
     if (argc != 3) {
         if (rank == 0) {
-            cout << "Usage: " << argv[0] << " <Number of Darts> <Number of Rounds>" << endl;
+            cout << "Usage: " << argv[0] << " <Number of Darts> <Number of Rounds> <output file name>" << endl;
         }
         MPI_Finalize();
         return 1;
@@ -63,6 +64,7 @@ int main(int argc, char *argv[]) {
     // Convert command line arguments to integers for "Darts" and "Roudns" parameters.
     int Darts = atoi(argv[1]);
     int Rounds = atoi(argv[2]);
+    string out_file_name = argv[3]
 
     // Get the start time in first process (rank 0 only use this variable.).
     double StartTime = MPI_Wtime();
@@ -95,7 +97,7 @@ int main(int argc, char *argv[]) {
         cout << "\tTotal Run time: " << ElapsedTime << " seconds!" << endl;
 
         // Save the results in a text file.
-        ofstream myfile("Part4_Results.csv", ios::app);     // Open the results file in append mode.
+        ofstream myfile(out_file_name, ios::app);     // Open the results file in append mode.
         if (myfile.is_open()) {
             myfile << Darts << "," << Rounds << "," << TotalPi << "," << ElapsedTime << "," << numtasks << "\n";
             myfile.close();
