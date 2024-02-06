@@ -15,7 +15,9 @@ Explain the problem with the following code
   for (i=0; i<N; i++)
     a[i] = b[i] + c[i];
 ```
-<span style="color:red">some text</span>.
+The fundamental issue with the code that performs both serial and parallel operations lies in the use of the variable `i`. The variable in both the serial and parallel `for` loops is not properly handled for parallel execution and could lead to a number of problems itemized below.
+- **Public Shared Loop Counter Variable:** The variable `i` used in both loops is not declared private in the parallel loop and could be an issue leading to the `race condition` where multiple processes/ processors can also write and modify this `i` variable simultaneously, leading to incorrect indexing and unpredictable results.
+- **Sequential Inconsistency in Array Initialization:** In the serial initialization loop, all the element are initialized to zero and because in OpenMP, variables defined outside the parallel region are shared by default, the computation accuracy in parallel loop is further compromised due to the fact of global ordering with respect to local orderings (as explained in example 2.6.1.6. of the textbook).
 
 ### Exercise 2.19
 Let's say there are $t$ threads, and your code looks like 
