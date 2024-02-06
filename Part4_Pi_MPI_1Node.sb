@@ -18,6 +18,8 @@
 cd $SLURM_SUBMIT_DIR                   ### change to the directory where your code is located
 
 
+module purge
+module load gcc/7.3.0-2.30 openmpi hdf5 python git
 
 # Lower number of darts using all range of prcesses
 DartValues=(1000 10000 100000 1000000 10000000)
