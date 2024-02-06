@@ -1,0 +1,310 @@
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000, Rounds: 100)
+	After 100000 throws, average value of pi = 3.124
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.0403044 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000, Rounds: 100)
+	After 100000 throws, average value of pi = 3.216
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.0204814 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000, Rounds: 100)
+	After 100000 throws, average value of pi = 3.115
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.0105779 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000, Rounds: 100)
+	After 100000 throws, average value of pi = 3.1445
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.00539152 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000, Rounds: 100)
+	After 100000 throws, average value of pi = 3.1315
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.00304175 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000, Rounds: 100)
+	After 100000 throws, average value of pi = 3.1375
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.00348711 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000, Rounds: 100)
+	After 100000 throws, average value of pi = 3.15775
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.00219003 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000, Rounds: 128)
+	After 128000 throws, average value of pi = 3.128
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.0539816 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000, Rounds: 128)
+	After 128000 throws, average value of pi = 3.122
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.0274875 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000, Rounds: 128)
+	After 128000 throws, average value of pi = 3.179
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.0139494 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000, Rounds: 128)
+	After 128000 throws, average value of pi = 3.16
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.00739946 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000, Rounds: 128)
+	After 128000 throws, average value of pi = 3.148
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.00455812 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000, Rounds: 128)
+	After 128000 throws, average value of pi = 3.15175
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.00249255 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000, Rounds: 128)
+	After 128000 throws, average value of pi = 3.143
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.00454248 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000, Rounds: 100)
+	After 1000000 throws, average value of pi = 3.136
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.427033 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000, Rounds: 100)
+	After 1000000 throws, average value of pi = 3.1538
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.218618 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000, Rounds: 100)
+	After 1000000 throws, average value of pi = 3.1339
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.112519 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000, Rounds: 100)
+	After 1000000 throws, average value of pi = 3.14275
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.056128 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000, Rounds: 100)
+	After 1000000 throws, average value of pi = 3.1451
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.0311564 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000, Rounds: 100)
+	After 1000000 throws, average value of pi = 3.14385
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.0172505 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000, Rounds: 100)
+	After 1000000 throws, average value of pi = 3.14266
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.0179585 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000, Rounds: 128)
+	After 1280000 throws, average value of pi = 3.1288
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.546254 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000, Rounds: 128)
+	After 1280000 throws, average value of pi = 3.1408
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.263435 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000, Rounds: 128)
+	After 1280000 throws, average value of pi = 3.1445
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.137089 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000, Rounds: 128)
+	After 1280000 throws, average value of pi = 3.1377
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.0733229 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000, Rounds: 128)
+	After 1280000 throws, average value of pi = 3.14227
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.0396537 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000, Rounds: 128)
+	After 1280000 throws, average value of pi = 3.13872
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.0222091 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000, Rounds: 128)
+	After 1280000 throws, average value of pi = 3.14003
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.0242537 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 100000, Rounds: 100)
+	After 10000000 throws, average value of pi = 3.13248
+	Real value of PI: 3.1415926535897
+	Total Run time: 4.41341 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 100000, Rounds: 100)
+	After 10000000 throws, average value of pi = 3.13532
+	Real value of PI: 3.1415926535897
+	Total Run time: 2.25531 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 100000, Rounds: 100)
+	After 10000000 throws, average value of pi = 3.1426
+	Real value of PI: 3.1415926535897
+	Total Run time: 1.15287 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 100000, Rounds: 100)
+	After 10000000 throws, average value of pi = 3.14113
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.583727 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 100000, Rounds: 100)
+	After 10000000 throws, average value of pi = 3.14348
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.322016 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 100000, Rounds: 100)
+	After 10000000 throws, average value of pi = 3.14303
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.17754 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 100000, Rounds: 100)
+	After 10000000 throws, average value of pi = 3.14362
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.122947 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 100000, Rounds: 128)
+	After 12800000 throws, average value of pi = 3.13776
+	Real value of PI: 3.1415926535897
+	Total Run time: 5.74059 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 100000, Rounds: 128)
+	After 12800000 throws, average value of pi = 3.13982
+	Real value of PI: 3.1415926535897
+	Total Run time: 2.89603 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 100000, Rounds: 128)
+	After 12800000 throws, average value of pi = 3.1399
+	Real value of PI: 3.1415926535897
+	Total Run time: 1.47851 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 100000, Rounds: 128)
+	After 12800000 throws, average value of pi = 3.14152
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.756809 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 100000, Rounds: 128)
+	After 12800000 throws, average value of pi = 3.14039
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.415218 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 100000, Rounds: 128)
+	After 12800000 throws, average value of pi = 3.14134
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.232617 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 100000, Rounds: 128)
+	After 12800000 throws, average value of pi = 3.14187
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.199338 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000000, Rounds: 100)
+	After 100000000 throws, average value of pi = 3.14112
+	Real value of PI: 3.1415926535897
+	Total Run time: 43.0924 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000000, Rounds: 100)
+	After 100000000 throws, average value of pi = 3.14222
+	Real value of PI: 3.1415926535897
+	Total Run time: 21.3976 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000000, Rounds: 100)
+	After 100000000 throws, average value of pi = 3.14178
+	Real value of PI: 3.1415926535897
+	Total Run time: 10.9234 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000000, Rounds: 100)
+	After 100000000 throws, average value of pi = 3.14203
+	Real value of PI: 3.1415926535897
+	Total Run time: 5.50431 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000000, Rounds: 100)
+	After 100000000 throws, average value of pi = 3.14219
+	Real value of PI: 3.1415926535897
+	Total Run time: 2.99736 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000000, Rounds: 100)
+	After 100000000 throws, average value of pi = 3.14138
+	Real value of PI: 3.1415926535897
+	Total Run time: 1.74281 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000000, Rounds: 100)
+	After 100000000 throws, average value of pi = 3.14135
+	Real value of PI: 3.1415926535897
+	Total Run time: 0.900555 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000000, Rounds: 128)
+	After 128000000 throws, average value of pi = 3.14144
+	Real value of PI: 3.1415926535897
+	Total Run time: 54.0358 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000000, Rounds: 128)
+	After 128000000 throws, average value of pi = 3.14149
+	Real value of PI: 3.1415926535897
+	Total Run time: 27.2359 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000000, Rounds: 128)
+	After 128000000 throws, average value of pi = 3.14194
+	Real value of PI: 3.1415926535897
+	Total Run time: 13.8232 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000000, Rounds: 128)
+	After 128000000 throws, average value of pi = 3.14201
+	Real value of PI: 3.1415926535897
+	Total Run time: 7.16537 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000000, Rounds: 128)
+	After 128000000 throws, average value of pi = 3.14105
+	Real value of PI: 3.1415926535897
+	Total Run time: 3.8353 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000000, Rounds: 128)
+	After 128000000 throws, average value of pi = 3.14164
+	Real value of PI: 3.1415926535897
+	Total Run time: 2.171 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 1000000, Rounds: 128)
+	After 128000000 throws, average value of pi = 3.14139
+	Real value of PI: 3.1415926535897
+	Total Run time: 1.69398 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000000, Rounds: 100)
+	After 1000000000 throws, average value of pi = 3.14087
+	Real value of PI: 3.1415926535897
+	Total Run time: 419.759 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000000, Rounds: 100)
+	After 1000000000 throws, average value of pi = 3.14173
+	Real value of PI: 3.1415926535897
+	Total Run time: 211.96 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000000, Rounds: 100)
+	After 1000000000 throws, average value of pi = 3.14173
+	Real value of PI: 3.1415926535897
+	Total Run time: 108.12 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000000, Rounds: 100)
+	After 1000000000 throws, average value of pi = 3.14156
+	Real value of PI: 3.1415926535897
+	Total Run time: 54.476 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000000, Rounds: 100)
+	After 1000000000 throws, average value of pi = 3.1417
+	Real value of PI: 3.1415926535897
+	Total Run time: 29.6769 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000000, Rounds: 100)
+	After 1000000000 throws, average value of pi = 3.14166
+	Real value of PI: 3.1415926535897
+	Total Run time: 17.2112 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000000, Rounds: 100)
+	After 1000000000 throws, average value of pi = 3.14159
+	Real value of PI: 3.1415926535897
+	Total Run time: 10.8299 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000000, Rounds: 128)
+	After 1280000000 throws, average value of pi = 3.14167
+	Real value of PI: 3.1415926535897
+	Total Run time: 533.629 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000000, Rounds: 128)
+	After 1280000000 throws, average value of pi = 3.14211
+	Real value of PI: 3.1415926535897
+	Total Run time: 269.715 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000000, Rounds: 128)
+	After 1280000000 throws, average value of pi = 3.14164
+	Real value of PI: 3.1415926535897
+	Total Run time: 136.998 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000000, Rounds: 128)
+	After 1280000000 throws, average value of pi = 3.14169
+	Real value of PI: 3.1415926535897
+	Total Run time: 71.0608 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000000, Rounds: 128)
+	After 1280000000 throws, average value of pi = 3.14155
+	Real value of PI: 3.1415926535897
+	Total Run time: 38.0287 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000000, Rounds: 128)
+	After 1280000000 throws, average value of pi = 3.14148
+	Real value of PI: 3.1415926535897
+	Total Run time: 21.4694 seconds!
+Starting MPI version of pi calculation using dartboard algorithm... (Darts: 10000000, Rounds: 128)
+	After 1280000000 throws, average value of pi = 3.14153
+	Real value of PI: 3.1415926535897
+	Total Run time: 14.3608 seconds!
+JobId=30911588 JobName=Part4_1n
+   UserId=abdolla4(6008393) GroupId=ceeng(2013) MCS_label=N/A
+   Priority=7710 Nice=0 Account=general QOS=abdolla4
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:36:27 TimeLimit=03:59:00 TimeMin=N/A
+   SubmitTime=2024-02-04T13:59:14 EligibleTime=2024-02-04T13:59:14
+   AccrueTime=2024-02-04T13:59:14
+   StartTime=2024-02-04T14:01:05 EndTime=2024-02-04T18:00:05 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2024-02-04T14:01:05 Scheduler=Backfill
+   Partition=general-short AllocNode:Sid=dev-amd20:75002
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=amr-005
+   BatchHost=amr-005
+   NumNodes=1 NumCPUs=64 NumTasks=64 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=64,mem=64G,node=1,billing=9961
+   AllocTRES=cpu=64,mem=64G,node=1,billing=9961
+   Socks/Node=* NtasksPerN:B:S:C=64:0:*:* CoreSpec=*
+   MinCPUsNode=64 MinMemoryCPU=1G MinTmpDiskNode=0
+   Features=[intel14|intel16|intel18|(amr|acm)|nvf|nal|nif]&amr DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/mnt/ufs18/home-033/abdolla4/CMSE822/Projects/project-2-pi-by-mpi-team-2/Part4_Pi_MPI_1Node.sb
+   WorkDir=/mnt/ufs18/home-033/abdolla4/CMSE822/Projects/project-2-pi-by-mpi-team-2
+   Comment=stdout=/mnt/ufs18/home-033/abdolla4/CMSE822/Projects/project-2-pi-by-mpi-team-2/slurm-30911588.out 
+   StdErr=/mnt/ufs18/home-033/abdolla4/CMSE822/Projects/project-2-pi-by-mpi-team-2/slurm-30911588.out
+   StdIn=/dev/null
+   StdOut=/mnt/ufs18/home-033/abdolla4/CMSE822/Projects/project-2-pi-by-mpi-team-2/slurm-30911588.out
+   Power=
+   
+
