@@ -53,7 +53,7 @@ int main(int argc, char *argv[]) {
 
     // Check for sufficient command line arguments. Two parameters of "Darts" and "Rounds" should be 
     //  an input from the command line.
-    if (argc != 3) {
+    if (argc != 4) {
         if (rank == 0) {
             cout << "Usage: " << argv[0] << " <Number of Darts> <Number of Rounds> <output file name>" << endl;
         }
@@ -64,7 +64,7 @@ int main(int argc, char *argv[]) {
     // Convert command line arguments to integers for "Darts" and "Roudns" parameters.
     int Darts = atoi(argv[1]);
     int Rounds = atoi(argv[2]);
-    string out_file_name = argv[3]
+    string out_file_name = argv[3];
 
     // Get the start time in first process (rank 0 only use this variable.).
     double StartTime = MPI_Wtime();
