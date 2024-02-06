@@ -28,9 +28,11 @@ for (i=0; i<N; i++) {
 ```
 If you specify a chunksize of $1$, iterations $0, t, 2t, \ldots$ go to the first thread $1, 1 + t, 1 + 2t, \ldots$ to the second, et cetera. Discuss why this is a bad strategy from a performance point of view. Hint: look up the definition of *false sharing*. What would be a good chunksize?
 
+<span style="color:red">Answer</span>
 
 
-<span style="color:red">some text</span>.
+Because array elements are save consecutively in memory it means that elements like a[0] and a[1] are likely to be on the same page, and will be brough to the same cache line, then if thread 0 modifies a[0], thread 1 modifies a[1], and so on, the same cache line will have to be move multiple times among different cores to keep the changes up to date, reducing the overall performance.
+
 
 ### Exercise 2.21
 There is still a problem left with this code: the boundary conditions from the original, global, version have not been taken into account. Give code that solves that problem. 
@@ -46,9 +48,44 @@ MPI_Comm_rank(MPI_COMM_WORLD,&myTaskID);
        MPI_Sendrecv( &b[LocalProblemSize-1], &bfromleft,  rightproc );
        MPI_Sendrecv( &b[0],                  &bfromright, leftproc);
 ```
+<span style="color:red">Answer</span>
+
+Assuming that the batches are sent in order, in other words, the process with rank 0 handles the elements from 0 to (batch size – 1)
 
 
-<span style="color:red">some text</span>.
+```c++
+for (i=0; i<LocalProblemSize; i++) {
+    if (i==0) {
+        if (rank == 0){
+            bleft=0;
+        }
+        else{
+           bleft=bfromleft; 
+        }
+    }
+    else {
+        bleft = b[i-1];
+    }
+
+    if (i==LocalProblemSize-1) {
+        if (rank == last_rank){
+            bright=0;
+        }
+        else{
+            bright=bfromright;
+        }
+    }
+    else {
+        bright = b[i+1];
+    }
+    if (rank == 0 || rank == last_rank){
+        a[i] = (b[i]+bleft+bright)/2;
+    }
+    else {
+        a[i] = (b[i]+bleft+bright)/3;
+    }
+}
+```
 
 ### Exercise 2.22
 Take another look at equation (2.5) and give pseudocode that solves the problem using non-blocking sends and receives. What is the disadvantage of this code over a blocking solution? 
@@ -60,18 +97,41 @@ y_i \longleftarrow y_i+x_{i-1} & i = 1, \ldots, n-1 \\
 y_0 \longleftarrow y_0+x_{n-1} & i = 0
 \end{cases}
 $$
+<span style="color:red">Answer</span>
 
-<span style="color:red">some text</span>.
+```
+// serial
+for i: 0 to last_rank:
+    init buffer i 
+
+// parallel, last rank = n - 1 
+buffer my rank = x[my rank]
+if my rank ==  last rank:
+    send(buffer my rank, 0)
+else:
+    send(buffer my rank, my rank + 1)
+
+if my rank ==  0:
+    x previous = recive(buffer last rank, last rank)
+else:
+    x previous = recive(buffer my rank - 1, my rank - 1)
+
+y[i] = y[i] + x previous
+```
 
 ### Exercise 2.23
 Analyze the discussion in the last item above. Assume that the bandwidth between the two nodes is only enough to sustain one message at a time. What is the cost savings of the hybrid model over the purely distributed model? Hint: consider width and latency separetly. 
 
-<span style="color:red">some text</span>.
+<span style="color:red">Answer</span>
+
+The big issue with the hybrid approach is that it requires handling 2 different issues at the same time, first, the communication between mpi processes, and then the memory management among the ones created by openmp on each mpi process, but assuming it is done correctly is possible to improve the latency among the openmp processes because for most of them, it won’t be necessary to go through the message passing among the network to reach the data that they need, these will simple take advantage of the shared memory of their node, in this way, the bandwidth stays the same but the latency of the system will be improved.
 
 ### Exercise 2.27
 How much can you gain from the overlapping computation and communication? Hint: consider the border cases where computation takes zero time and there is only communication, and the reverse. Now consider the general case. 
-<span style="color:red">some text</span>.
 
+<span style="color:red">Answer</span>
+
+For both border scenarios, we have the same situation, the program will take as much as the amount of communication or computation, depending on the case, that is done by the system, now for the general case it is similar, let's assume that communication takes longer than computation, if these are overlapped the computation time will be irrelevant because it will be done by the time that communication is finished so the overall time that it takes to end the program is the same as the time required for the communication, and if the situation is reversed, so computation takes longer than communication, the overall time will be equal to the time required to compute making the communication time irrelevant
 
 ## Part 2: Setup on HPCC 
 
