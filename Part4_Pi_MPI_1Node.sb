@@ -6,7 +6,7 @@
 #SBATCH --ntasks-per-node=64
 #SBATCH --cpus-per-task=1
 #SBATCH --mem-per-cpu=2G
-#SBATCH --job-name Part4_1n
+#SBATCH --job-name MC_Pi
 #SBATCH --constraint=amr
  
 ########## Command Lines to Run ##########
