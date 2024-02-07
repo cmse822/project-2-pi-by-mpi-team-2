@@ -64,7 +64,7 @@ int main(int argc, char *argv[]) {
     // Convert command line arguments to integers for "Darts" and "Roudns" parameters.
     int Darts = atoi(argv[1]);
     int Rounds = atoi(argv[2]);
-    string out_file_name = argv[3]
+    string out_file_name = argv[3];
 
     // Get the start time in first process (rank 0 only use this variable.).
     double StartTime = MPI_Wtime();
@@ -89,7 +89,7 @@ int main(int argc, char *argv[]) {
     MPI_Reduce(&AvgPi, &TotalPi, 1, MPI_DOUBLE, MPI_SUM, 0, MPI_COMM_WORLD);
 
     if (rank == 0) {
-        TotalPi /= numtasks;                        // Calculate the average Pi value.
+        TotalPi /= numtasks;                        // Calculate the average Pi value.F
         double EndTime = MPI_Wtime();               // Get the wall clock for the end time.
         double ElapsedTime = EndTime - StartTime;   // Calculate the total time, based on rank 0.
         cout << "\tAfter " << (Darts * Rounds) << " throws, average value of pi = " << TotalPi << endl;
