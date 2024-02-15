@@ -275,6 +275,7 @@ $$p(N_{cores}) = \frac{Total\_time}{N_{cores}}$$
 From the above plot we see that as the amount of computational work increases, the simulated runtime matches the ideal runtime. Furthermore, we see that if the computational work is relatively low ($N_{dart} = 1000$), adding more processors further increases the runtime as against using a single processor, and this results from communication latency, where cores that are farther apart will have high communication latency. However, in the case of higher computational task ($N_{dart} >10^{6}$), increasing the number of processors breaks the bottleeneck caused by communication latency, because increasing the number of processors allows for more parallel procesing and computational efficiency as seen in the Figure below. 
 
 ![plot_efficiency](analysis/figures/img03.png)
+
  With more processors, communication tasks are distributed more efficiently, Where each processor handles a portion of the computational workload. As seen in the efficiency plot above, where increasing the processors for large-scale tasks ($N_{dart} = 10^{7}$) led to the increase in the efficiency, and ultimately reducing the total runtime.
 
  In conclusion, the decrease in `total runtime` with an `increased number of processors` for `larger dart numbers` is primarily due to the **efficiencies gained through parallel processing**, **effective resource utilization**, and the **capability of the system to handle larger workloads more efficiently.**
