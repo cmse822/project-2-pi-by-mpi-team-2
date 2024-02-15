@@ -267,7 +267,11 @@ The solid line in the above plot is the actual trend of the Error and the number
 ### Runtime analysis
 ![runtime](analysis/figures/img02.png)
 
+#### Discussion
+The dotted line is the fitted function using the polynomial function below. The ideal time scaling would be the total time that it takes for a single processor to complete the work, divided by the number of processors.
 
+$$p(N_{cores}) = \frac{Total\_time}{N_{cores}}$$
+ 
 
 ## What to turn-in
 
