@@ -261,20 +261,23 @@ The solid line in the above plot is the actual trend of the Error and the number
  
  where ‘a’ is a constant.
 
- From the plot above we see that increasing the total number of darts (1E3, 1E6, 1E9), increased the accuracy of the approimation of $\pi$ following the law of large numbers. Interestingly, the result revealed that increasing the number of processors, increased the accuracy in the approximation of $\pi$, that is, the analyis using the processor size of 16, 32, and 64, had a higher accuracy compared to 1, 2, 4, and 8. Ideally, increasing the number of processors should decrease computation time but may not linearly improve the accuracy of π. This is because while parallel processing can handle more data points simultaneously, the accuracy is primarily dependent on the total number of darts rather than how quickly they are processed. The observed increase in accuracy with more processors could be due to more efficient computation allowing for a larger number of simulations within a given time, thus adhering better to the law of large numbers for Monte Carlo simulations. 
+ From the plot above we see that increasing the total number of darts (1E3, 1E6, 1E9), increased the accuracy of the approimation of $\pi$ following the law of large numbers. Interestingly, the result revealed that increasing the number of processors, increased the accuracy in the approximation of $\pi$, that is, the analyis using the processor size of 16, 32, and 64, had a higher accuracy compared to 1, 2, 4, and 8. Ideally, increasing the number of processors should decrease computation time but may not linearly improve the accuracy of π. This is because while parallel processing can handle more data points simultaneously, the accuracy is primarily dependent on the total number of darts rather than how quickly they are processed. The observed increase in accuracy with more processors could be due to more efficient computation allowing for a larger number of simulations and approximation within a given time, thus adhering better to the law of large numbers for Monte Carlo simulations.
 
 
 ### Runtime analysis
 ![runtime](analysis/figures/img02.png)
 
 #### Discussion
-The dotted line is the fitted function using the polynomial function below. The ideal time scaling would be the total time that it takes for a single processor to complete the work, divided by the number of processors.
+The dotted line is the ideal runtime, which is the fitted function using the polynomial function below. The ideal time scaling would be the total time that it takes for a single processor to complete the work, divided by the number of processors.
 
 $$p(N_{cores}) = \frac{Total\_time}{N_{cores}}$$
 
+From the above plot we see that as the amount of computational work increases, the simulated runtime matches the ideal runtime. Furthermore, we see that if the computational work is relatively low ($N_{dart} = 1000$), adding more processors further increases the runtime as against using a single processor, and this results from communication latency, where cores that are farther apart will have high communication latency. However, in the case of higher computational task ($N_{dart} >10^{6}$), increasing the number of processors breaks the bottleeneck caused by communication latency, because increasing the number of processors allows for more parallel procesing and computational efficiency as seen in the Figure below. 
 
 ![plot_efficiency](analysis/figures/img03.png)
- 
+ With more processors, communication tasks are distributed more efficiently, Where each processor handles a portion of the computational workload. As seen in the efficiency plot above, where increasing the processors for large-scale tasks ($N_{dart} = 10^{7}$) led to the increase in the efficiency, and ultimately reducing the total runtime.
+
+ In conclusion, the decrease in `total runtime` with an `increased number of processors` for `larger dart numbers` is primarily due to the **efficiencies gained through parallel processing**, **effective resource utilization**, and the **capability of the system to handle larger workloads more efficiently.**
 
 ## What to turn-in
 
