@@ -254,6 +254,10 @@ Pi is the ratio of a circle's circumference to its diameter. As such, the value 
 ### Error as a function of darts
 ![plot_error](analysis/figures/img01.png)
 
+#### Discussion
+From the plot above we see that increasing the total number of darts (1E3, 1E6, 1E9), increased the accuracy of the approimation of $\pi$ following the law of large numbers. Interestingly, the result revealed that increasing the number of processors, increased the accuracy in the approximation of $\pi$, that is, the analyis using the processor size of 16, 32, and 64, had a higher accuracy compared to 1, 2, 4, and 8. Ideally, increasing the number of processors should decrease computation time but may not linearly improve the accuracy of π. This is because while parallel processing can handle more data points simultaneously, the accuracy is primarily dependent on the total number of darts rather than how quickly they are processed. The observed increase in accuracy with more processors could be due to more efficient computation allowing for a larger number of simulations within a given time, thus adhering better to the law of large numbers for Monte Carlo simulations. 
+
+
 ### Runtime analysis
 ![runtime](analysis/figures/img02.png)
 
