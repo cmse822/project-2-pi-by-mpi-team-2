@@ -255,13 +255,23 @@ Pi is the ratio of a circle's circumference to its diameter. As such, the value 
 ![plot_error](analysis/figures/img01.png)
 
 #### Discussion
-From the plot above we see that increasing the total number of darts (1E3, 1E6, 1E9), increased the accuracy of the approimation of $\pi$ following the law of large numbers. Interestingly, the result revealed that increasing the number of processors, increased the accuracy in the approximation of $\pi$, that is, the analyis using the processor size of 16, 32, and 64, had a higher accuracy compared to 1, 2, 4, and 8. Ideally, increasing the number of processors should decrease computation time but may not linearly improve the accuracy of π. This is because while parallel processing can handle more data points simultaneously, the accuracy is primarily dependent on the total number of darts rather than how quickly they are processed. The observed increase in accuracy with more processors could be due to more efficient computation allowing for a larger number of simulations within a given time, thus adhering better to the law of large numbers for Monte Carlo simulations. 
+The solid line in the above plot is the actual trend of the Error and the number of darts from the different processor size. Additionally, we included the dotted lines in the plot, which is a fitted polynomial function using the formula below:  
+
+ $$p(N) = \frac{a}{\sqrt(N)}$$    
+ 
+ where ‘a’ is a constant.
+
+ From the plot above we see that increasing the total number of darts (1E3, 1E6, 1E9), increased the accuracy of the approimation of $\pi$ following the law of large numbers. Interestingly, the result revealed that increasing the number of processors, increased the accuracy in the approximation of $\pi$, that is, the analyis using the processor size of 16, 32, and 64, had a higher accuracy compared to 1, 2, 4, and 8. Ideally, increasing the number of processors should decrease computation time but may not linearly improve the accuracy of π. This is because while parallel processing can handle more data points simultaneously, the accuracy is primarily dependent on the total number of darts rather than how quickly they are processed. The observed increase in accuracy with more processors could be due to more efficient computation allowing for a larger number of simulations within a given time, thus adhering better to the law of large numbers for Monte Carlo simulations. 
 
 
 ### Runtime analysis
 ![runtime](analysis/figures/img02.png)
 
+#### Discussion
+The dotted line is the fitted function using the polynomial function below. The ideal time scaling would be the total time that it takes for a single processor to complete the work, divided by the number of processors.
 
+$$p(N_{cores}) = \frac{Total\_time}{N_{cores}}$$
+ 
 
 ## What to turn-in
 
