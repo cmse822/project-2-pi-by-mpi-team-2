@@ -257,7 +257,7 @@ Pi is the ratio of a circle's circumference to its diameter. As such, the value 
 #### Discussion
 The solid line in the above plot is the actual trend of the Error and the number of darts from the different processor size. Additionally, we included the dotted lines in the plot, which is a fitted polynomial function using the formula below:  
 
- $$p(N) = \frac{a}{\sqrt(N)}$$    
+ $$p(N) = \frac{a}{\sqrt{N}}$$    
  
  where ‘a’ is a constant.
 
@@ -270,7 +270,7 @@ The solid line in the above plot is the actual trend of the Error and the number
 #### Discussion
 The dotted line is the ideal runtime, which is the fitted function using the polynomial function below. The ideal time scaling would be the total time that it takes for a single processor to complete the work, divided by the number of processors.
 
-$$p(N_{cores}) = \frac{Total\_time}{N_{cores}}$$
+$$p(N_{cores}) = \frac{T_1}{N_{cores}}$$
 
 From the above plot we see that as the amount of computational work increases, the simulated runtime matches the ideal runtime. Furthermore, we see that if the computational work is relatively low ($N_{dart} = 1000$), adding more processors further increases the runtime as against using a single processor, and this results from communication latency, where cores that are farther apart will have high communication latency. However, in the case of higher computational task ($N_{dart} >10^{6}$), increasing the number of processors breaks the bottleeneck caused by communication latency, because increasing the number of processors allows for more parallel procesing and computational efficiency as seen in the Figure below. 
 
